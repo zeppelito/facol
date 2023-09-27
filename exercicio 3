@@ -1,0 +1,30 @@
+public class Restaurante {
+    private String nome;
+    private String endereco;
+    private List<Prato> menu;
+
+
+public class Prato {
+    private String nome;
+    private double preco;
+
+    
+public class Entrega {
+    private LocalDate dataEntrega;
+    private Cliente cliente;
+    private Pedido pedido;
+
+
+    public class Entregador {
+    private String nome;
+    private String veiculo;
+    private String placa;
+
+    public class Cliente {
+    private String nome;
+    private String endereco;
+    private String num_pedido;
+
+    public class Pedido {
+    private Cliente cliente;
+    private List<Prato> itens;
