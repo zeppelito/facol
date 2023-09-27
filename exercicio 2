@@ -1,0 +1,103 @@
+public class Passageiro {
+    private String nome;
+    private int idade;
+
+    public Passageiro(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+}
+
+
+public class Motorista {
+    private String nome;
+    private String cnhNumero;
+
+    public Motorista(String nome, String cnhNumero) {
+        this.nome = nome;
+        this.cnhNumero = cnhNumero;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCnhNumero() {
+        return cnhNumero;
+    }
+
+    public void setCnhNumero(String cnhNumero) {
+        this.cnhNumero = cnhNumero;
+    }
+}
+
+public class Viagem {
+    private Passageiro passageiro;
+    private Motorista motorista;
+    private double distancia;
+    private double custo;
+
+    public Viagem(Passageiro passageiro, Motorista motorista, double distancia, double custo) {
+        this.passageiro = passageiro;
+        this.motorista = motorista;
+        this.distancia = distancia;
+        this.custo = custo;
+    }
+
+    public Passageiro getPassageiro() {
+        return passageiro;
+    }
+
+    public void setPassageiro(Passageiro passageiro) {
+        this.passageiro = passageiro;
+    }
+
+    public Motorista getMotorista() {
+        return motorista;
+    }
+
+    public void setMotorista(Motorista motorista) {
+        this.motorista = motorista;
+    }
+
+    public double getDistancia() {
+        return distancia;
+    }
+
+    public void setDistancia(double distancia) {
+        this.distancia = distancia;
+    }
+
+    public double getCusto() {
+        return custo;
+    }
+
+    public void setCusto(double custo) {
+        this.custo = custo;
+    }
+
+    // Método para calcular o preço da viagem
+    public double calcularPreco() {
+        return custo * distancia;
+    }
+}
