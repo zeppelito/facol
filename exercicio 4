@@ -1,0 +1,24 @@
+public class Produto {
+    private String nome;
+    private double preco;
+    private int quantidadeEmEstoque;
+
+public class Vendedor {
+    private String nome;
+    private int codigo;
+    private int cnpj;
+
+
+public class Cliente {
+    private String nome;
+    private String endereco;
+    private int cpf;
+
+
+
+ublic class Venda {
+    private int numero;
+    private LocalDate data;
+    private Vendedor vendedor;
+    private Cliente cliente;
+    private List<Produto> produtos;
